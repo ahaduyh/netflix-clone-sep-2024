@@ -26,7 +26,10 @@ export default function Banner() {
     setBannerPlay(true);
   };
   const myList = () => {
-    window, scrollTo(0, 475);
+    window.scrollTo({ top: 475, behavior: "smooth" });
+  };
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   function trancate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
@@ -57,6 +60,9 @@ export default function Banner() {
           </div>
         </div>
         <div className={styles.banner_fadeBottom} />
+        <button onClick={scrollUp} className={styles.scrollUp}>
+          home⬆
+        </button>
       </div>
     </>
   );
