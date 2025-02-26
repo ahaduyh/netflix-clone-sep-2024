@@ -26,7 +26,7 @@ export default function Banner() {
     setBannerPlay(true);
   };
   const myList = () => {
-    window, scrollTo(0, 500);
+    window, scrollTo(0, 475);
   };
   function trancate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
