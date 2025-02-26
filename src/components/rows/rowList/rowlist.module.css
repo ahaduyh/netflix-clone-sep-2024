@@ -1,5 +1,3 @@
-.rowList {
-  position: relative;
-  margin-top: 40px;
-  z-index: 150;
+.rowList{
+  margin-top: 20px;
 }
