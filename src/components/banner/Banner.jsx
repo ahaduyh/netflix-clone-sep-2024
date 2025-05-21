@@ -4,7 +4,7 @@ import requests from "../../utils/requests";
 import styles from "./banner.module.css";
 export default function Banner() {
   const [movie, SetMovie] = useState({});
-  const [bannerPlay, setBannerPlay] = useState([]);
+  const [bannerPlay, setBannerPlay] = useState(false);
   useEffect(() => {
     (async () => {
       try {
@@ -29,7 +29,7 @@ export default function Banner() {
     window.scrollTo({ top: 475, behavior: "smooth" });
   };
   const scrollUp = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "instant" });
   };
   function trancate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;

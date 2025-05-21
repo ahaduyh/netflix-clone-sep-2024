@@ -1,13 +1,13 @@
 .banner {
+  position: relative;
   color: white;
   height: 80vh;
-  margin-top: -10vh;
   object-fit: contain;
 }
 
 .banner_content {
   margin-left: 30px;
-  padding: 160px 0px;
+  padding: 150px 0px;
 }
 .banner_title {
   font-size: 3rem;
@@ -29,14 +29,13 @@
 .scrollUp {
   font-size: 30px;
   position: fixed;
-  bottom:0;
-  right:0;
-background-color: transparent(1, 1, 1, 0.5);
+  bottom: 0;
+  right: 0;
+  background-color: transparent(1, 1, 1, 0.5);
   border: 2px groove rgb(67, 26, 26);
   background-color: rgba(51, 51, 51, 0.5);
-  
-  color: rgb(205, 189, 189);
 
+  color: rgb(205, 189, 189);
 }
 .banner_buttons button {
   color: white;
@@ -62,12 +61,16 @@ background-color: transparent(1, 1, 1, 0.5);
   transition: all 0.2s;
 }
 .banner_fadeBottom {
-  height: 40vh;
-  margin-top: -33vh;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  height: 80vh;
+  /* margin-top: -33vh; */
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(37, 37, 37, 0.61),
+    rgba(80, 221, 76, 0.61),
     #111
   );
 }

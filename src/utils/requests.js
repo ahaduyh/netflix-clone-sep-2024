@@ -12,3 +12,16 @@ const requests = {
   fetchTvShows: `/discover/tv?api_key=${API_KEY}&with_genres=10770`,
 };
 export default requests;
+
+const title=[
+"NetflixOriginals",
+"Trending",
+"TopRated",
+"ActionMovies",
+"ComedyMovies",
+"HorrorMovies",
+"RomanceMovies",
+"Documentaries",
+"TvShows"
+]
+export { title };
